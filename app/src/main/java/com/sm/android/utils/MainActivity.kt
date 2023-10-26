@@ -21,10 +21,6 @@ class MainActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
 
-//        git remote add origin https://github.com/shahidmehmood67/AndroidUtils.git
-//        git branch -M main
-//                git push -u origin main
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
