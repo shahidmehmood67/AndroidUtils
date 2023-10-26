@@ -1,4 +1,4 @@
-package com.sm.android.utils
+package com.sm.android.utils.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,11 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.sm.android.utils.R
 import com.sm.android.utils.databinding.FragmentSecondBinding
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
+
 class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
