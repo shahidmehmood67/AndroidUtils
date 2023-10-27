@@ -31,6 +31,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,DialogsActivity::class.java))
         }
 
+        binding.btnCustomViews.setOnClickListener {
+
+        }
+
+        binding.btnAnimations.setOnClickListener {
+            startActivity(Intent(this,AnimationsActivity::class.java))
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

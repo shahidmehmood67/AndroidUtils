@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toprounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/progress_circular"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:elevation="5dp"
+            android:src="@drawable/iconladybug3"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/cross_dialog"
+            android:padding="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_circular">
+
+            <TextView
+                android:id="@+id/txtScreenMirror1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voice"
+                android:textColor="#EF8436"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtScreenMirror2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Calculator"
+                android:textColor="#3D4F61"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:text="Do calculations using just your voice"
+            android:textColor="#777272"
+            android:textSize="13sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/share_app"
+            style="@style/BottomSheetItem"
+            android:drawableStart="@drawable/share_app"
+            android:drawableLeft="@drawable/share_app"
+            android:text="Share App"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#F3F3F3"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="45dp"
+            app:layout_constraintTop_toBottomOf="@+id/share_app"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/more_apps"
+            style="@style/BottomSheetItem"
+            android:drawableStart="@drawable/more_apps"
+            android:drawableLeft="@drawable/more_apps"
+            android:text="More Apps"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginVertical="5dp"
+            android:background="#F3F3F3"
+            android:layout_marginHorizontal="45dp"
+            app:layout_constraintTop_toBottomOf="@+id/more_apps"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/policy_app"
+            style="@style/BottomSheetItem"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/policy_app"
+            android:drawableLeft="@drawable/policy_app"
+            android:textSize="18sp"
+            android:text="Privacy Policy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#F3F3F3"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="45dp"
+            app:layout_constraintTop_toBottomOf="@+id/policy_app"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rate_app"
+            style="@style/BottomSheetItem"
+            android:drawableStart="@drawable/rate_app"
+            android:drawableLeft="@drawable/rate_app"
+            android:layout_marginTop="5dp"
+            android:text="Rate Us"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#F3F3F3"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="45dp"
+            app:layout_constraintTop_toBottomOf="@+id/rate_app"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/exit_app"
+            style="@style/BottomSheetItem"
+            android:drawableStart="@drawable/exit_app"
+            android:drawableLeft="@drawable/exit_app"
+            android:layout_marginTop="5dp"
+            android:text="Exit App"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

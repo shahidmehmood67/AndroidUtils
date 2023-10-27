@@ -8,6 +8,13 @@
     <string name="previous">Previous</string>
 
     <string name="dialogs">Dialogs</string>
+    <string name="customviews">Custom Views</string>
+    <string name="animations">Animations</string>
+
+    <string name="dialogsdesc">Dialogs , AlertDialogs and BottomSheetDialogs</string>
+    <string name="customviewsdesc">Custom Views</string>
+    <string name="animationsdesc">Different Types of Animations</string>
+
     <string name="dialogjava">Dialog in Java</string>
     <string name="dialog1">Dialog1</string>
     <string name="dialog2">Dialog2</string>
@@ -22,19 +29,35 @@
     <string name="dialogdesc1">Exit Dialog using DialogFragment</string>
     <string name="dialogdesc2">Rating Dialog using DialogFragment</string>
     <string name="dialogdesc3">Settings Dialog in Activity without statusbar</string>
-    <string name="dialogdesc4">Alert Dialog Gravity Bottom hided statusbar</string>
-    <string name="dialogdesc5">Dilog5</string>
+    <string name="dialogdesc4">Rating Dialog in activity</string>
+    <string name="dialogdesc5">Dialog Using Library</string>
     <string name="dialogdesc6">Dilog6</string>
     <string name="dialogdesc7">Dilog7</string>
     <string name="dialogdesc8">Dilog8</string>
 
+    <string name="dialogbottomsheet1">Bottom Sheet Dialog1</string>
+    <string name="dialogbottomsheet2">Bottom Sheet Dialog2</string>
+    <string name="dialogbottomsheet3">Bottom Sheet Dialog3</string>
+
+    <string name="dialogalert1">Alert Dialog1</string>
+    <string name="dialogalert2">Alert Dialog2</string>
+    <string name="dialogalert3">Alert Dialog3</string>
+
+    <string name="dialogalertdesc1">Alert Dialog Gravity Bottom hided statusbar</string>
+    <string name="dialogalertdesc2">Alert Dialog</string>
+    <string name="dialogalertdesc3">Alert Dialog</string>
+
+    <string name="dialogbottomsheetdesc1">Menu using BottomsheetDialogFragment</string>
+    <string name="dialogbottomsheetdesc2">Rating Dialog using BottomsheetDialogFragment</string>
+    <string name="dialogbottomsheetdesc3">BottomsheetDialogFragment</string>
+    <string name="dialogbottomsheetdesc4">BottomsheetDialogFragment</string>
+
 
     <string name="dialogjavadesc1">Exit Dialog using DialogFragment</string>
     <string name="dialogjavadesc2">Rating Dialog using DialogFragment</string>
-    <string name="dialogjavadesc3">Settings Dialog in Activity without statusbar</string>
-    <string name="dialogjavadesc4">Alert Dialog Gravity Bottom hided statusbar</string>
+    <string name="dialogjavadesc3">DialogFragment</string>
+    <string name="dialogjavadesc4">DialogFragment</string>
 
-    <string name="customviews">Custom Views</string>
     <string name="exit">Exit?</string>
     <string name="exit_desc">Do you want to exit from App?</string>
     <string name="rateus_desc">We would be very grateful if you can rate us.</string>
@@ -54,5 +77,11 @@
     <string name="continuous">continuous</string>
     <string name="rhythm">rhythm</string>
     <string name="music">music</string>
+    <string name="rate_first">Please give a rating first!</string>
+    <string name="useGoogleLocationServices">Use Google\'s Location Services?</string>
+    <string name="useGoogleLocationServicesPrompt">Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</string>
+    <string name="agree">agree</string>
+    <string name="disagree">disagree</string>
+    <string name="more_info">more_info</string>
 
 </resources>

@@ -76,6 +76,42 @@
             />
 
 
+        <TextView
+            style="@style/SampleTextView"
+            android:text="@string/dialogdesc5"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDialog5"
+            style="@style/SampleButton"
+            android:text="@string/dialog5"
+            />
+
+
+        <TextView
+            style="@style/SampleTextView"
+            android:text="@string/dialogalertdesc1"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDialogAlert1"
+            style="@style/SampleButton"
+            android:text="@string/dialogalert1"
+            />
+
+
+        <TextView
+            style="@style/SampleTextView"
+            android:text="@string/dialogbottomsheetdesc1"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDialogBSheet1"
+            style="@style/SampleButton"
+            android:text="@string/dialogbottomsheet1"
+            />
+
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

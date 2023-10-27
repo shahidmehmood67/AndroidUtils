@@ -11,4 +11,5 @@
     <color name="textdarkgray">#7B7B7B</color>
     <color name="appViewsGroupsColors">#02FFC7</color>
     <color name="fulltransparent">#00000000</color>
+    <color name="background">#455A64</color>
 </resources>

@@ -16,6 +16,9 @@
         android:theme="@style/Theme.AndroidUtilsKotlinJava"
         tools:targetApi="31">
         <activity
+            android:name=".activities.AnimationsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.DialogsJavaActivity"
             android:exported="false" />
         <activity

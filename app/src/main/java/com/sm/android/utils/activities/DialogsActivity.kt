@@ -3,6 +3,7 @@ package com.sm.android.utils.activities
 import android.R
 import android.app.AlertDialog
 import android.app.Dialog
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -10,22 +11,26 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnClickListener
 import android.view.Window
 import android.view.WindowManager
+import android.widget.RatingBar
+import android.widget.TextView
+import android.widget.Toast
+import com.afollestad.materialdialogs.MaterialDialog
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.sm.android.utils.databinding.ActivityDialogsBinding
 import com.sm.android.utils.databinding.DialogBottom4Binding
 import com.sm.android.utils.databinding.DialogSettingsBinding
 import com.sm.android.utils.dialogs.ExitDialog
+import com.sm.android.utils.dialogs.MenuBottomSheetDialog
 import com.sm.android.utils.dialogs.RatingDialog
-import com.sm.android.utils.utils.AppConstants.FLASHING_TYPE_CONTINUOUS
-import com.sm.android.utils.utils.AppConstants.FLASHING_TYPE_RHYTHM
-import com.sm.android.utils.utils.SharedPrefConstants
+import com.sm.android.utils.utils.toast
+import com.afollestad.materialdialogs.lifecycle.lifecycleOwner
 
-class DialogsActivity : AppCompatActivity()  , OnClickListener {
+class DialogsActivity : AppCompatActivity()   , MenuBottomSheetDialog.ItemClickListener {
 
     private lateinit var binding: ActivityDialogsBinding
 
@@ -34,37 +39,42 @@ class DialogsActivity : AppCompatActivity()  , OnClickListener {
         binding = ActivityDialogsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnDialogJava.setOnClickListener(this)
-        binding.btnDialog1.setOnClickListener(this)
-        binding.btnDialog2.setOnClickListener(this)
-        binding.btnDialog3.setOnClickListener(this)
-
-    }
-
-    override fun onClick(v: View?) {
-
-        when(v){
-            binding.btnDialogJava ->{
-                startActivity(Intent(this, DialogsJavaActivity::class.java))
-            }
-            binding.btnDialog1 ->{
-                val dialog = ExitDialog()
-                dialog.show(this.supportFragmentManager, "exitdialog")
-            }
-            binding.btnDialog2 ->{
-                val dialog = RatingDialog()
-                dialog.show(this.supportFragmentManager, "ratingdialog")
-            }
-            binding.btnDialog3 ->{
-                showPermissionSettingDialog3("")
-            }
-            binding.btnDialog4 ->{
-                showBottomDialog4()
-            }
-
-
+        binding.btnDialogJava.setOnClickListener{
+            startActivity(Intent(this, DialogsJavaActivity::class.java))
         }
 
+//        Dialog
+        binding.btnDialog1.setOnClickListener{
+            val dialog = ExitDialog()
+            dialog.show(this.supportFragmentManager, "exitdialog")
+        }
+        binding.btnDialog2.setOnClickListener{
+            val dialog = RatingDialog()
+            dialog.show(this.supportFragmentManager, "ratingdialog")
+        }
+        binding.btnDialog3.setOnClickListener{
+            showPermissionSettingDialog3("Storage")
+        }
+        binding.btnDialog4.setOnClickListener{
+            showRatingDialog4()
+        }
+        binding.btnDialog5.setOnClickListener{
+            callbackDialog5()
+        }
+
+//        AlertDialog
+        binding.btnDialogAlert1.setOnClickListener{
+            showBottomAlertDialog1()
+        }
+
+//        BottomSheetDialogFragment
+        binding.btnDialogBSheet1.setOnClickListener{
+            supportFragmentManager.let {
+                MenuBottomSheetDialog.newInstance(Bundle()).apply {
+                    show(it, tag)
+                }
+            }
+        }
 
     }
 
@@ -99,7 +109,57 @@ class DialogsActivity : AppCompatActivity()  , OnClickListener {
         dialog.show()
     }
 
-    private fun showBottomDialog4() {
+    private fun showRatingDialog4() {
+        val dialog  = Dialog(this@DialogsActivity)
+        try {
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
+        } catch (ne:NullPointerException) {
+        } catch (e:Exception) {
+        }
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(com.sm.android.utils.R.layout.dialog_rateus2)
+        val submit: TextView = dialog.findViewById(com.sm.android.utils.R.id.submit)
+        val cancel: TextView = dialog.findViewById(com.sm.android.utils.R.id.cancelBtn)
+        val ratingBar: RatingBar = dialog.findViewById(com.sm.android.utils.R.id.rating_bar)
+        ratingBar.max = 5
+        ratingBar.numStars = 5
+
+        cancel.setOnClickListener(View.OnClickListener {
+            dialog.dismiss()
+        })
+
+        submit.setOnClickListener(View.OnClickListener {
+            if (ratingBar.rating <= 0) {
+                this.toast {
+                    "rating"
+                }
+                return@OnClickListener
+            } else if (ratingBar.rating <= 3) {
+                this.toast {
+                    "rating"
+                }
+            } else {
+                this.toast {
+                    "rating"
+                }
+            }
+            dialog.dismiss()
+        })
+        dialog.show()
+    }
+
+    private fun callbackDialog5(){
+        MaterialDialog(this).show {
+            title(com.sm.android.utils.R.string.useGoogleLocationServices)
+            message(com.sm.android.utils.R.string.useGoogleLocationServicesPrompt)
+            positiveButton(com.sm.android.utils.R.string.agree)
+            negativeButton(com.sm.android.utils.R.string.disagree)
+            neutralButton(com.sm.android.utils.R.string.more_info)
+            lifecycleOwner(this@DialogsActivity)
+        }
+    }
+
+    private fun showBottomAlertDialog1() {
         val dialog = AlertDialog.Builder(this)
         val dialogBinding = DialogBottom4Binding.inflate(LayoutInflater.from(this))
         dialog.setView(dialogBinding.root)
@@ -159,4 +219,40 @@ class DialogsActivity : AppCompatActivity()  , OnClickListener {
     }
 
 
+
+    override fun onBottomSheetItemClick(item: String) {
+        when(item){
+            "Share"->{
+                this.toast {
+                 "$item"
+                }
+            }
+            "MoreApps"->{
+                 this.toast {
+                 "$item"
+                }
+            }
+            "Policy"->{
+                 this.toast {
+                 "$item"
+                }
+            }
+            "Rate"->{
+                 this.toast {
+                 "$item"
+                }
+            }
+            "Exit"->{
+                this.toast {
+                    "$item"
+                }
+            }
+            else->{
+                //Handle data
+                this.toast {
+                    "$item"
+                }
+            }
+        }
+    }
 }
