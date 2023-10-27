@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="36"
+    android:viewportHeight="36">
+  <path
+      android:pathData="m15.36,3.22a4.26,4.26 0,0 0,-3 -1.22h-1.09a0.84,0.84 0,0 0,0 1.68h1.12a2.5,2.5 0,0 1,2.51 2.32,6.79 6.79,0 0,1 1.64,-0.52 4.15,4.15 0,0 0,-1.18 -2.26z"
+      android:fillColor="#072a30"/>
+  <path
+      android:pathData="m24.73,2h-1.13a4.28,4.28 0,0 0,-3 1.22,4.13 4.13,0 0,0 -1.17,2.29 6.79,6.79 0,0 1,1.67 0.49,2.51 2.51,0 0,1 0.73,-1.62 2.48,2.48 0,0 1,1.77 -0.73h1.13a0.84,0.84 0,0 0,0 -1.68z"
+      android:fillColor="#072a30"/>
+  <path
+      android:pathData="m6.17,12a0.83,0.83 0,0 0,-1.17 0.16,0.84 0.84,0 0,0 0.17,1.18l2.65,2a4.8,4.8 0,0 1,1 -1.39z"
+      android:fillColor="#072a30"/>
+  <path
+      android:pathData="m31,12.16a0.83,0.83 0,0 0,-1.17 -0.16l-2.59,1.94a5,5 0,0 1,0.94 1.39l2.66,-2a0.84,0.84 0,0 0,0.16 -1.17z"
+      android:fillColor="#072a30"/>
+  <path
+      android:pathData="m4.54,22.21a0.84,0.84 0,0 0,0 1.68h2.8v-1.68z"
+      android:fillColor="#072a30"/>
+  <path
+      android:pathData="m31.46,22.21h-2.8v1.69h2.8a0.84,0.84 0,0 0,0 -1.68z"
+      android:fillColor="#072a30"/>
+  <path
+      android:pathData="m9.08,29.66 l-2.89,2.9a0.84,0.84 0,0 0,0 1.2,0.85 0.85,0 0,0 1.19,0l2.79,-2.76a8.59,8.59 0,0 1,-1.09 -1.34z"
+      android:fillColor="#072a30"/>
+  <path
+      android:pathData="m29.81,32.56 l-2.89,-2.9a9.3,9.3 0,0 1,-1.09 1.34l2.79,2.8a0.85,0.85 0,0 0,1.19 0,0.86 0.86,0 0,0 0,-1.24z"
+      android:fillColor="#072a30"/>
+  <path
+      android:pathData="m12.39,12.39h-0.25a5.88,5.88 0,0 1,11.71 0z"
+      android:fillColor="#43d685"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="m27,17.44v6.74a7.86,7.86 0,0 1,-7.88 7.82h-2.24a7.86,7.86 0,0 1,-7.88 -7.82v-6.74a3.4,3.4 0,0 1,3.36 -3.37h4.77v13.48a0.84,0.84 0,1 0,1.68 0v-13.48h4.77a3.41,3.41 0,0 1,3.42 3.37z"
+      android:fillColor="#43d685"
+      android:fillType="evenOdd"/>
+</vector>

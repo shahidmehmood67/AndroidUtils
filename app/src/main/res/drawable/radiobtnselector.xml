@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Checked state -->
+    <item android:drawable="@drawable/checkboxselected" android:state_checked="true" />
+    <!-- Unchecked state -->
+    <item android:drawable="@drawable/radiobtnunselected" android:state_checked="false" />
+    <!-- Disabled state -->
+    <item android:drawable="@drawable/checkboxunselected" android:state_enabled="false" />
+</selector>

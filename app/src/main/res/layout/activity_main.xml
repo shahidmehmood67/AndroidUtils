@@ -28,6 +28,15 @@
             android:layout_gravity="center"
             />
 
+        <Button
+            android:id="@+id/btnViews"
+            android:layout_width="@dimen/buttons_width"
+            android:layout_height="@dimen/buttons_height"
+            android:text="@string/customviews"
+            android:padding="@dimen/buttons_margin"
+            android:layout_gravity="center"
+            />
+
     </GridLayout>
 
 

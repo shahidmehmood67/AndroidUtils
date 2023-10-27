@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="appBtnColor">#2F5183</color>
+    <color name="appBgViews">#172A46</color>
+    <color name="rateun">#dbdbdb</color>
+    <color name="rate">#FFD700</color>
+    <color name="appmainDarkTheme">#0A192F</color>
+    <color name="transparentbg9">#90000000</color>
+    <color name="textdarkgray">#7B7B7B</color>
+    <color name="appViewsGroupsColors">#02FFC7</color>
+    <color name="fulltransparent">#00000000</color>
 </resources>

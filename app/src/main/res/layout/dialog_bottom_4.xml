@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/appBgViews"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_25sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/cross_icon"
+                app:tint="@color/white"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@+id/viewline"
+                app:layout_constraintTop_toTopOf="@+id/tv_disable"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_disable"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_disable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:text="Mode"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp"
+                app:layout_constraintStart_toStartOf="@+id/viewline"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <View
+                android:id="@+id/viewline"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.9"
+                android:layout_height="2px"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/textdarkgray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_disable"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_continue_flash"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/flashlight_icon"
+                app:tint="@color/white"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toBottomOf="@+id/viewline"
+                app:layout_constraintStart_toStartOf="@+id/viewline"
+                />
+
+            <!--    android:layoutDirection="rtl"-->
+            <RadioButton
+                android:id="@+id/rBtn_contious_flash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableEnd="@drawable/radiobtnselector"
+                android:background="?android:selectableItemBackground"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/continuous"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toEndOf="@+id/iv_continue_flash"
+                app:layout_constraintTop_toTopOf="@+id/iv_continue_flash"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_continue_flash"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_sos"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:padding="@dimen/_1sdp"
+                android:src="@drawable/sos_text"
+                app:tint="@color/white"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toBottomOf="@+id/iv_continue_flash"
+                app:layout_constraintStart_toStartOf="@+id/iv_continue_flash"
+                app:layout_constraintEnd_toEndOf="@+id/iv_continue_flash"
+                />
+
+            <RadioButton
+                android:id="@+id/rBtn_sos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableEnd="@drawable/radiobtnselector"
+                android:background="?android:selectableItemBackground"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/rhythm"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toEndOf="@+id/iv_sos"
+                app:layout_constraintTop_toTopOf="@+id/iv_sos"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_sos"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_music"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/music"
+                app:tint="@color/white"
+                android:visibility="visible"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toBottomOf="@+id/iv_sos"
+                app:layout_constraintStart_toStartOf="@+id/iv_continue_flash"
+                app:layout_constraintEnd_toEndOf="@+id/iv_continue_flash"
+                />
+
+            <RadioButton
+                android:id="@+id/rBtn_music"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableEnd="@drawable/radiobtnselector"
+                android:background="?android:selectableItemBackground"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:visibility="visible"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/music"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toEndOf="@+id/iv_music"
+                app:layout_constraintTop_toTopOf="@+id/iv_music"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_music"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

@@ -3,10 +3,28 @@
     <style name="Base.Theme.AndroidUtilsKotlinJava" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+<!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+<!--        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>-->
     </style>
 
     <style name="Theme.AndroidUtilsKotlinJava" parent="Base.Theme.AndroidUtilsKotlinJava" />
+
+    <!--    Dialog -->
+    <style name="SampleButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/buttons_height</item>
+
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/buttons_margin_horizontal</item>
+    </style>
+
+
+    <style name="SampleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/buttons_margin_top</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/buttons_margin_horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>

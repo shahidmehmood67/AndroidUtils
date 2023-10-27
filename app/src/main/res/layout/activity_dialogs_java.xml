@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DialogsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:paddingBottom="@dimen/margin_20dp"
+            >
+
+            <TextView
+                style="@style/SampleTextView"
+                android:text="@string/dialogdesc1"
+                />
+
+            <Button
+                android:id="@+id/btnDialog1"
+                style="@style/SampleButton"
+                android:text="@string/dialog1"
+                />
+
+            <TextView
+                style="@style/SampleTextView"
+                android:text="@string/dialogdesc2"
+                />
+
+            <Button
+                android:id="@+id/btnDialog2"
+                style="@style/SampleButton"
+                android:text="@string/dialog2"
+                />
+
+            <TextView
+                style="@style/SampleTextView"
+                android:text="@string/dialogdesc3"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDialog3"
+                style="@style/SampleButton"
+                android:text="@string/dialog3"
+                />
+
+
+            <TextView
+                style="@style/SampleTextView"
+                android:text="@string/dialogdesc4"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDialog4"
+                style="@style/SampleButton"
+                android:text="@string/dialog4"
+                />
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
