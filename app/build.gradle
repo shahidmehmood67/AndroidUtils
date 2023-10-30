@@ -54,4 +54,9 @@ dependencies {
 //    Dialogs
     implementation 'com.afollestad.material-dialogs:core:3.3.0'
     implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
+
+//    Animation
+    //Animation 1
+    implementation 'com.github.hujiaweibujidao:wava:1.0.0'
+
 }

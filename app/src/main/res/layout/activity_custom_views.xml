@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CustomViewsActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <com.sm.android.utils.customviews.AutoResizeTextView
+        android:id="@+id/customtv1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/autoresizetext"
+        />
+
+
+    <com.sm.android.utils.customviews.AutofitTextView
+        android:id="@+id/customtv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/autoresizetext"
+        android:layout_marginTop="@dimen/sdpmargin_10"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="40sp"
+        autofit:minTextSize="8sp"
+        />
+
+
+    <com.sm.android.utils.customviews.AutofitLayout
+        android:id="@+id/customAutofitLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sdpmargin_10"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/autoresizebtntext"
+            />
+    </com.sm.android.utils.customviews.AutofitLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -58,6 +58,19 @@
     <string name="dialogjavadesc3">DialogFragment</string>
     <string name="dialogjavadesc4">DialogFragment</string>
 
+
+    <string name="autoresizetext">This is auto resizeable textview.</string>
+    <string name="autoresizetext2">This is auto resizeable textview.This is auto resizeable textview.</string>
+    <string name="autoresizebtntext">This is Button inside auto fit layout.</string>
+
+
+    <string name="animation1">Animations using YoYo</string>
+    <string name="clickanimate">Click Below Buttton to Animate</string>
+
+    <string name="animate">Animate</string>
+    <string name="animationfadein">Fadein</string>
+    <string name="animationfadeout">Fadeout</string>
+
     <string name="exit">Exit?</string>
     <string name="exit_desc">Do you want to exit from App?</string>
     <string name="rateus_desc">We would be very grateful if you can rate us.</string>

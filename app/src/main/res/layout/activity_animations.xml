@@ -7,4 +7,144 @@
     android:layout_height="match_parent"
     tools:context=".activities.AnimationsActivity">
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/SampleTextView"
+            android:text="@string/animation1" />
+
+        <Button
+            android:id="@+id/btnAnimation"
+            style="@style/SampleButton"
+            android:text="@string/clickanimate" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll">
+
+        <Button
+            android:id="@+id/btnAnimation1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/animationfadein" />
+
+        <Button
+            android:id="@+id/btnAnimation2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="FadeInLeft" />
+
+        <Button
+            android:id="@+id/btnAnimation3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Flash" />
+
+        <Button
+            android:id="@+id/btnAnimation4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Pulse" />
+
+        <Button
+            android:id="@+id/btnAnimation5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="RubberBand" />
+
+        <Button
+            android:id="@+id/btnAnimation6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Shake" />
+
+        <Button
+            android:id="@+id/btnAnimation7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Swing" />
+
+        <Button
+            android:id="@+id/btnAnimation8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Wobble" />
+
+        <Button
+            android:id="@+id/btnAnimation9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Bounce" />
+
+        <Button
+            android:id="@+id/btnAnimation10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Tada" />
+
+        <Button
+            android:id="@+id/btnAnimation11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="StandUp" />
+
+        <Button
+            android:id="@+id/btnAnimation12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Wave" />
+
+        <Button
+            android:id="@+id/btnAnimation13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Hinge" />
+
+        <Button
+            android:id="@+id/btnAnimation14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="RollIn" />
+
+        <Button
+            android:id="@+id/btnAnimation15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="RollOut" />
+
+    </GridLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

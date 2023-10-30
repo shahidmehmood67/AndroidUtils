@@ -14,7 +14,6 @@
     <style name="SampleButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/buttons_height</item>
-
         <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/buttons_margin_horizontal</item>
     </style>
 

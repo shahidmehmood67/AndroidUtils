@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnCustomViews.setOnClickListener {
-
+            startActivity(Intent(this,CustomViewsActivity::class.java))
         }
 
         binding.btnAnimations.setOnClickListener {
