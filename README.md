@@ -18,4 +18,3 @@
 
 ### Animations Screenshots
 ![alt text](/screenshots/animation1.png)
-![alt text](/screenshots/animation2.png)
