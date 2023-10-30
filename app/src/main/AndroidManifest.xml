@@ -16,6 +16,12 @@
         android:theme="@style/Theme.AndroidUtilsKotlinJava"
         tools:targetApi="31">
         <activity
+            android:name=".activities.AnimationsCustomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AnimationYoyoActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.CustomViewsActivity"
             android:exported="false" />
         <activity

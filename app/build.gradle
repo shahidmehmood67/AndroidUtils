@@ -59,4 +59,7 @@ dependencies {
     //Animation 1
     implementation 'com.github.hujiaweibujidao:wava:1.0.0'
 
+    //Animation 2
+    implementation 'com.github.gayanvoice:android-animations-kotlin:1.0.1'
+
 }

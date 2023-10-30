@@ -65,6 +65,7 @@
 
 
     <string name="animation1">Animations using YoYo</string>
+    <string name="animation2">Animations Custom</string>
     <string name="clickanimate">Click Below Buttton to Animate</string>
 
     <string name="animate">Animate</string>
