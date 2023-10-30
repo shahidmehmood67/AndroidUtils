@@ -21,7 +21,7 @@ class MenuBottomSheetDialog : BottomSheetDialogFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        view =  inflater.inflate(R.layout.bottom_menu, container, false)
+        view =  inflater.inflate(R.layout.dialog_bottom_menu, container, false)
         return view
     }
 

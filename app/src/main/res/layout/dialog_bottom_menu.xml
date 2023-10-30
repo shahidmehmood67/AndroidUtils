@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -32,10 +33,10 @@
             android:id="@+id/iv_close"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/cross_dialog"
+            android:src="@drawable/cross_icon"
             android:padding="3dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,8 +54,8 @@
                 android:id="@+id/txtScreenMirror1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Voice"
-                android:textColor="#EF8436"
+                android:text="@string/abc"
+                android:textColor="#43d685"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -62,8 +63,8 @@
                 android:id="@+id/txtScreenMirror2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Calculator"
-                android:textColor="#3D4F61"
+                android:text="@string/abc"
+                android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -84,9 +85,8 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/share_app"
             style="@style/BottomSheetItem"
-            android:drawableStart="@drawable/share_app"
-            android:drawableLeft="@drawable/share_app"
-            android:text="Share App"
+            android:drawableStart="@drawable/baseline_share_24"
+            android:text="@string/share_app"
             android:textSize="18sp"
             android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -105,9 +105,8 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/more_apps"
             style="@style/BottomSheetItem"
-            android:drawableStart="@drawable/more_apps"
-            android:drawableLeft="@drawable/more_apps"
-            android:text="More Apps"
+            android:drawableStart="@drawable/baseline_menu_24"
+            android:text="@string/more_apps"
             android:textSize="18sp"
             android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -126,10 +125,9 @@
             android:id="@+id/policy_app"
             style="@style/BottomSheetItem"
             android:layout_marginTop="5dp"
-            android:drawableStart="@drawable/policy_app"
-            android:drawableLeft="@drawable/policy_app"
+            android:drawableStart="@drawable/baseline_privacy_tip_24"
             android:textSize="18sp"
-            android:text="Privacy Policy"
+            android:text="@string/privacy_policy"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
@@ -144,10 +142,9 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/rate_app"
             style="@style/BottomSheetItem"
-            android:drawableStart="@drawable/rate_app"
-            android:drawableLeft="@drawable/rate_app"
+            android:drawableStart="@drawable/baseline_star_rate_24"
             android:layout_marginTop="5dp"
-            android:text="Rate Us"
+            android:text="@string/rate_us"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -163,10 +160,9 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/exit_app"
             style="@style/BottomSheetItem"
-            android:drawableStart="@drawable/exit_app"
-            android:drawableLeft="@drawable/exit_app"
+            android:drawableStart="@drawable/cross_icon"
             android:layout_marginTop="5dp"
-            android:text="Exit App"
+            android:text="@string/exit"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

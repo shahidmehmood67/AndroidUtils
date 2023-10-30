@@ -41,33 +41,6 @@
                 android:text="@string/dialog2"
                 />
 
-            <TextView
-                style="@style/SampleTextView"
-                android:text="@string/dialogdesc3"
-                />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnDialog3"
-                style="@style/SampleButton"
-                android:text="@string/dialog3"
-                />
-
-
-            <TextView
-                style="@style/SampleTextView"
-                android:text="@string/dialogdesc4"
-                />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnDialog4"
-                style="@style/SampleButton"
-                android:text="@string/dialog4"
-                />
-
-
-
-
-
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

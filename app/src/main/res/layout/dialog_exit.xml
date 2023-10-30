@@ -12,7 +12,7 @@
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginVertical="@dimen/_5sdp"
         android:background="@drawable/main_shape"
-        android:backgroundTint="@color/appBtnColor"
+        android:backgroundTint="@color/maindialogs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

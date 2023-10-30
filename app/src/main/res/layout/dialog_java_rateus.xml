@@ -7,7 +7,7 @@
     android:elevation="0dp"
     app:cardElevation="0dp"
     app:cardCornerRadius="@dimen/_15sdp"
-    app:cardBackgroundColor="#3B63EA">
+    app:cardBackgroundColor="#4527A0">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rate Us!"
+                android:text="@string/rate_us"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_marginTop="10dp"
@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="If you are enjoying our app kindly rate us."
+                android:text="@string/rate_us_description_text"
                 android:textColor="@color/white"
                 android:alpha="0.8"
                 android:layout_marginBottom="13dp"
@@ -65,7 +65,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
-                android:text="Rate Now"
+                android:text="@string/rate_now"
                 android:minWidth="180dp"
                 android:layout_margin="20dp"
                 android:id="@+id/submit"

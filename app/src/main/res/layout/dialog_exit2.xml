@@ -12,7 +12,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="#3B63EA"
+        android:background="#4527A0"
         android:layout_height="wrap_content" >
 
         <LinearLayout
@@ -41,7 +41,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Exit App"
+                android:text="@string/exit_app"
                 android:textStyle="bold"
                  
                 android:textColor="@color/white"
@@ -52,7 +52,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Are you sure you want to exit this app?"
+                android:text="@string/are_you_sure_you_want_to_exit_this_app"
                  
                 android:textColor="#FFFFFF"
                 android:alpha="0.8"
@@ -68,13 +68,13 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:text="No"
+                    android:text="@string/no"
                     android:layout_marginStart="10dp"
                     android:layout_marginVertical="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
                     android:id="@+id/no"
-                    android:backgroundTint="#23469D"
+                    android:backgroundTint="#6A54AF"
                     android:textColor="@color/white"
                     android:background="@drawable/btnstroke"
                     />
@@ -82,7 +82,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:text="Yes"
+                    android:text="@string/yes"
                     android:layout_weight="1"
                     android:layout_marginEnd="10dp"
                     android:layout_marginVertical="10dp"

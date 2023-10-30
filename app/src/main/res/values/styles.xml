@@ -4,11 +4,12 @@
     <style name="RatingBar" parent="Theme.AppCompat">
         <item name="colorControlNormal">@color/rateun</item>
         <item name="colorControlActivated">@color/rate</item>
-        <item name="android:colorPressedHighlight">@color/appmainDarkTheme</item>
+        <item name="android:colorPressedHighlight">@color/maindialogsbtn</item>
     </style>
 
     <style name="BottomSheetItem">
         <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:drawablePadding">20dp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>

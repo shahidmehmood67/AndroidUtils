@@ -88,7 +88,7 @@
     <string name="instruction1">1. Tap Open Settings</string>
     <string name="instruction2">2. Goto Permissions</string>
     <string name="instruction3">3. Allow access to %s</string>
-    <string name="continuous">continuous</string>
+    <string name="abc">abc text</string>
     <string name="rhythm">rhythm</string>
     <string name="music">music</string>
     <string name="rate_first">Please give a rating first!</string>
@@ -97,5 +97,19 @@
     <string name="agree">agree</string>
     <string name="disagree">disagree</string>
     <string name="more_info">more_info</string>
+    <string name="rate_us">Rate Us!</string>
+    <string name="rate_us_description_text">Rate us description text</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="are_you_sure_you_want_to_exit_this_app">Are you sure you want to exit this app?</string>
+    <string name="exit_app">Exit App</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="submit">Submit</string>
+    <string name="your_opinion_matter_to_us">Rate us!</string>
+    <string name="rate_us_desc">rate us desc</string>
+    <string name="cancel">Cancel</string>
+    <string name="share_app">Share App</string>
+    <string name="more_apps">More Apps</string>
+    <string name="privacy_policy">Privacy Policy</string>
 
 </resources>

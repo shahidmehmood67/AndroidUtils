@@ -12,4 +12,11 @@
     <color name="appViewsGroupsColors">#02FFC7</color>
     <color name="fulltransparent">#00000000</color>
     <color name="background">#455A64</color>
+
+
+    <color name="maindialogs">#4527A0</color>
+    <color name="maindialogslight">#7C51FF</color>
+    <color name="maindialogsbtn">#6A54AF</color>
+    <color name="maindialogsbtn2">#664ABC</color>
+
 </resources>
