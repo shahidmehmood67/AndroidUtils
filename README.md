@@ -12,7 +12,6 @@
 
 
 ### Dialogs Screenshots
-![alt text](/screenshots/dialog1.png)
 ![alt text](/screenshots/dialog2.png)
 
 
