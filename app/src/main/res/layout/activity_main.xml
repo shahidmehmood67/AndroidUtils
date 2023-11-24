@@ -53,10 +53,19 @@
             android:text="@string/animations"
             />
 
+        <Button
+            android:id="@+id/btnDemoActivity"
+            style="@style/SampleButton"
+            android:text="@string/demoactivity"
+            />
+
+
+
+
+
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-
 
 
 

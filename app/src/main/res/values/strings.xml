@@ -10,6 +10,7 @@
     <string name="dialogs">Dialogs</string>
     <string name="customviews">Custom Views</string>
     <string name="animations">Animations</string>
+    <string name="demoactivity">Demo Activity</string>
 
     <string name="dialogsdesc">Dialogs , AlertDialogs and BottomSheetDialogs</string>
     <string name="customviewsdesc">Custom Views</string>

@@ -25,8 +25,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         binding.btnDialogs.setOnClickListener {
             startActivity(Intent(this,DialogsActivity::class.java))
         }
@@ -37,6 +35,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnAnimations.setOnClickListener {
             startActivity(Intent(this,AnimationsActivity::class.java))
+        }
+
+        binding.btnDemoActivity.setOnClickListener {
+            startActivity(Intent(this,DemoTestingActivity::class.java))
         }
 
     }
