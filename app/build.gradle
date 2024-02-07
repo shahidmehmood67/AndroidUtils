@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.sm.android.utils"
-        minSdk 24
+        minSdk 21
         targetSdk 33
         versionCode 1
         versionName "1.0.0"
@@ -61,5 +61,20 @@ dependencies {
 
     //Animation 2
     implementation 'com.github.gayanvoice:android-animations-kotlin:1.0.1'
+
+
+//    Reactive
+//    Rx Java
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.7'
+//    Rx Android
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+//    Rx Kotlin
+    implementation 'io.reactivex.rxjava3:rxkotlin:3.0.1'
+
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-rx3:1.7.1"
 
 }
